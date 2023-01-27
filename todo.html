@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+    <link rel = "stylesheet" href ="style.css"/>
+    <script type="text/javascript" src="todo.js"></script>
+</head>
+
+<body>
+    <div>
+        <h3 style="text-align: center;">Basic To-Do App</h3> 
+    </div>
+    <div style="background-color:#1f3861;padding: 10px;height:100vh;margin-left:0px;" class="display">
+        <div class="todo" >
+            <input type="text" placeholder="Title" value="" id="title" required onchange="onChangeIn()"/>
+            <p id="in"></p>
+            <textarea placeholder="Description" id="desc" required onchange="onChangeDesc()"></textarea>
+            <p id="des"></p>
+            <button class="btn" onclick="save()">Add</button>
+        </div>
+        <div style="width:45%;padding:3px;">
+            <div class="head">
+                <p>Title</p>
+                <p>Description</p>
+                <p>Delete</p>
+            </div>
+            <hr>
+            <div id="add">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
